@@ -2,22 +2,21 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/style-resources', '@nuxtjs/google-fonts', 'nuxt-icon'
+    "@nuxtjs/style-resources",
+    "@nuxtjs/google-fonts",
+    "nuxt-icon",
+    "@nuxtjs/tailwindcss",
   ],
-  css: ['~/assets/style/tailwind.css'],
   postcss: {
     plugins: {
-      tailwindcss: {},
       autoprefixer: {},
     },
   },
-  googleFonts:{
+  googleFonts: {
     families: {
-          Quicksand:true
-        }
+      Lato: true,
+      Ultra: true,
+    },
   },
-  components: [
-    { path: '~/global' },
-    '~/components'
-  ]
-})
+  components: [{ path: "~/global" }, "~/components"],
+});

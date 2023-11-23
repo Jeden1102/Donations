@@ -1,6 +1,8 @@
 <template>
   <div>
-    <GlobalHeader />
+    <Header />
+    <Hero />
+    <HeroCards />
   </div>
 </template>
 
