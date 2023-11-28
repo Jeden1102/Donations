@@ -1,8 +1,14 @@
 @use "./variables.scss" as *;
+
 * {
     font-family: $font-primary;
 }
 
 .font-secondary {
     font-family: $font-secondary;
+}
+
+.container-slim {
+    max-width: 1200px;
+    margin:0 auto;
 }

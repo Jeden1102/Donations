@@ -1,6 +1,10 @@
 <template>
-  <div class="bg-primary-1 p-4 flex flex-col gap-4">
-    <HeroCard v-for="card in cards" :card="card" />
+  <div class="bg-primary-1 relative md:pt-12 md:pb-40">
+    <img class="hidden md:block absolute left-0 top-[-50%]" src="/icons/plant-shape-1.svg" />
+    <img class="hidden md:block absolute right-0 top-0" src="/icons/plant-shape-2.svg" />
+    <div class="container-slim flex flex-wrap justify-center gap-4">
+      <HeroCard v-for="card in cards" :card="card" />
+    </div>
   </div>
 </template>
 <script lang="ts" setup>
@@ -10,7 +14,7 @@ const cards = [
     variant: "primary-3",
     items: [
       "Fragrance selection",
-      "Wax melting and preparation",
+      "Waxing",
       "Wick placement",
     ],
   },
@@ -25,18 +29,16 @@ const cards = [
     ],
   },
   {
-    title: "Decorative ceramics",
+    title: "Decorative",
     variant: "secondary-2",
     items: [
-      "Glazing or Underglazing",
+      "Glazing",
       "Painting and Detailing",
       "Kiln firing",
-      "Multiple Firings",
     ],
   },
 ];
 </script>
 <style lang="scss" scoped>
-.card {
-}
+.card {}
 </style>

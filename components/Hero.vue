@@ -1,9 +1,9 @@
 <template>
   <div
-    class="bg-primary-1 p-4 flex flex-col gap-4 md:items-center md:gap-8 md:pt-12"
+    class="bg-primary-1 p-4 flex flex-col gap-4  md:items-center md:gap-8 md:pt-12"
   >
     <h2
-      class="text-3xl text-primary-4 font-secondary md:text-4xl lg:text-5xl xl:text-6xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.4)]"
+      class="text-3xl z-10 relative text-primary-4 font-secondary md:text-4xl lg:text-5xl xl:text-8xl container-slim text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.4)]"
     >
       Cera, where creativity meets
     </h2>
