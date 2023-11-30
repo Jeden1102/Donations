@@ -1,4 +1,5 @@
 @use "./variables.scss" as *;
+@use "./mixin.scss" as *;
 
 * {
     font-family: $font-primary;

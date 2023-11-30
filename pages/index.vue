@@ -3,6 +3,7 @@
     <Header />
     <Hero />
     <HeroCards />
+    <Workshop />
   </div>
 </template>
 

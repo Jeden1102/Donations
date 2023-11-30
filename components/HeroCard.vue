@@ -1,7 +1,6 @@
 <template>
   <div
     class="p-4 flex flex-col gap-4 items-center justify-center shadow-md card relative w-72 h-72 p-8 md:w-96"
-    :class="`bg-${card.variant}`"
   >
     <p class="text-secondary-1 text-xl font-bold uppercase text-center">{{ card.title }}</p>
     <ul class="flex flex-wrap justify-center gap-x-4">
