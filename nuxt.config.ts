@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "nuxt-icon",
     "@nuxtjs/tailwindcss",
-    'nuxt-swiper',
     'vue3-carousel-nuxt'
   ],
   postcss: {
