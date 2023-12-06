@@ -8,6 +8,7 @@
     <SliderSeparator :items="itemsSeparator" />
     <Features />
     <WorkshopSlider :items="workshopSlides" />
+    <FooterCta/>
   </div>
 </template>
 
@@ -41,4 +42,5 @@ const workshopSlides = [
 <style  lang="scss">
 @use "./assets/style/variables.scss" as *;
 @use "./assets/style/style.scss" as *;
+@use "./assets/style/mixin.scss" as *;
 </style>
