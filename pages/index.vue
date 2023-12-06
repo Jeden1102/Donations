@@ -9,6 +9,8 @@
     <Features />
     <WorkshopSlider :items="workshopSlides" />
     <FooterCta/>
+    <Newsletter/>
+    <Footer/>
   </div>
 </template>
 

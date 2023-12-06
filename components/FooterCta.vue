@@ -3,7 +3,7 @@
         <div
             class="flex flex-col gap-8 bg-primary-4 relative py-12 justify-center items-center custom-rounded lg:py-24 px-4">
             <h2
-                class="text-3xl z-10 relative text-secondary-2 font-secondary md:text-4xl lg:text-5xl xl:text-8xl text-center">
+                class="text-3xl z-10 relative text-secondary-2 font-secondary md:text-4xl lg:text-5xl xl:text-8xl text-center max-w-[1200px]">
                 Craft workshop team bulding
             </h2>
             <p class="text-center text-secondary-2 px-12 max-w-[800px]">Ignite teamwork and creativity with CERA's craft
