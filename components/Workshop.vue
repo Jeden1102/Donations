@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-secondary-3 text-white relative py-8">
+    <div class="bg-secondary-3 text-white relative py-8" id="crafted-universe">
         <img class="hidden md:block absolute left-0 bottom-0 h-52 lg:h-72 xl:h-96" src="/icons/workshop-grid.png" alt="Ilus image"  />
         <div class="container-slim p-4 flex flex-col gap-8 md:flex-row z-10 relative md:p-8 lg:gap-20">
             <div class="flex flex-col gap-8 text-light lg:pb-20">
@@ -24,7 +24,7 @@
                 <p class="text-lg md:text-xl font-bold text-primary-3">
                     Experience the Art of Pottery, Scented Candles, and Workshops with our experts.
                 </p>
-                <button class="bg-white p-4 rounded-md shadow-md text-primary-3 font-bold w-fit transition-colors  hover:bg-primary-3 hover:text-white">
+                <button class="bg-secondary-1 p-4 rounded-md shadow-md text-white font-bold w-fit transition-colors">
                     Upcoming Workshops
                     <Icon name="material-symbols:arrow-right-alt" />
                 </button>

@@ -6,7 +6,7 @@
                 class="text-3xl z-10 relative text-secondary-2 font-secondary md:text-4xl lg:text-5xl xl:text-8xl text-center max-w-[1200px]">
                 Craft workshop team bulding
             </h2>
-            <p class="text-center text-secondary-2 px-12 max-w-[800px]">Ignite teamwork and creativity with CERA's craft
+            <p class="text-center text-white px-12 max-w-[800px]">Ignite teamwork and creativity with CERA's craft
                 workshops.
                 Collaborate, create, and
                 bond as you craft
@@ -14,7 +14,7 @@
                 creativity
                 together at CERA.</p>
             <button
-                class="bg-white p-4 rounded-md shadow-md text-primary-3 font-bold w-fit transition-colors  hover:bg-primary-3 hover:text-white">
+                class="bg-secondary-1 p-4 rounded-md shadow-md text-white font-bold w-fit transition-colors ">
                 Upcoming Workshops
                 <Icon name="material-symbols:arrow-right-alt" />
             </button>

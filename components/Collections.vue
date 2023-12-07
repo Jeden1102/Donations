@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-primary-1 text-white relative">
+    <div class="bg-primary-1 text-white relative" id="our-kits">
         <div class="flex flex-col md:flex-row ">
             <div class="flex flex-col gap-8  p-4 justify-between lg:pl-96 lg:py-12">
                 <h2

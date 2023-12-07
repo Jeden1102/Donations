@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full py-4 bg-secondary-1">
+    <div class="w-full py-4 bg-secondary-1" id="workshops">
         <carousel :items-to-show="1" :breakpoints="breakpoints" :wrap-around="true" :autoplay="3000">
             <slide v-for="(item, key) in items" :key="key">
                 <div class="relative">
