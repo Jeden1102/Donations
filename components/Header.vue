@@ -10,9 +10,9 @@
       <div
         class="-translate-y-8 pointer-events-none transition-all absolute right-8 top-16 bg-white w-fit py-4 px-6 shadow-lg rounded-md rounded-tr-none flex flex-col gap-2 z-20 md:top-20 opacity-0"
         :class="{ 'opacity-100 translate-y-0 pointer-events-auto ': isMobileMenuVisible }">
-        <a @click="setActiveMenuItem(link)" class="menu-link relative  w-fit text-lg pl-2"
-          :class="{ 'is-active': link === activeMenuItem }" v-for="link in links" :key="link" :href="formatLink(link)">{{
-            link }}</a>
+        <NuxtLink @click="setActiveMenuItem(link)" class="menu-link relative  w-fit text-lg pl-2"
+          :class="{ 'is-active': link === activeMenuItem }" v-for="link in links" :key="link" :to="formatLink(link)">{{
+            link }}</NuxtLink>
       </div>
     </div>
   </header>
@@ -29,7 +29,7 @@ const links = [
   "Newsletter"
 ]
 const formatLink = (link: string) => {
-  return '#' + link.toLowerCase().replaceAll(" ", "-");
+  return '/#' + link.toLowerCase().replaceAll(" ", "-");
 }
 const setActiveMenuItem = (link: string) => {
   activeMenuItem.value = link;
