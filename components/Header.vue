@@ -2,7 +2,7 @@
   <header class="bg-primary-1 p-2 flex justify-between items-center md:p-8 md:py-2 fixed w-full z-20 top-0 left-0  shadow-sm">
     <h1 class="text-primary-4 uppercase text-3xl font-secondary">cera</h1>
     <div class="flex gap-4">
-      <img src="/icons/arrow.svg" alt="Arrow icon" width="103" height="103">
+      <img format="webp" src="/icons/arrow.svg" alt="Arrow icon" width="103" height="103"/>
       <button @click="isMobileMenuVisible = !isMobileMenuVisible" title="Toggle menu"
         class="w-9 h-9 bg-white rounded-full mt-3 md:mt-5">
         <Icon class="text-3xl" name="system-uicons:menu-hamburger" />

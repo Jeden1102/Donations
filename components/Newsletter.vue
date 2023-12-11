@@ -13,7 +13,7 @@
             <input id="email" type="text" class="bg-white border-none pl-4">
             <button class="bg-primary-4 font-bold text-white p-4">Subscribe</button>
         </div>
-        <img src="/icons/plant-shape-5.svg" class="hidden md:block absolute left-1/2 bottom-0 z-0" alt="">
+        <NuxtImg loading="lazy" format="webp" src="/icons/plant-shape-5.svg" class="hidden md:block absolute left-1/2 bottom-0 z-0" alt="Plant shape."/>
     </div>
 </template>
 <style lang="scss" scoped>

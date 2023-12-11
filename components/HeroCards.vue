@@ -1,7 +1,7 @@
 <template>
   <div class="bg-primary-1 relative md:pt-12 md:pb-40">
-    <img class="hidden md:block absolute left-0 top-[-50%]" src="/icons/plant-shape-1.svg" alt="Plant icon."/>
-    <img class="hidden md:block absolute right-0 top-0" src="/icons/plant-shape-2.svg" alt="Plant icon."/>
+    <NuxtImg format="webp" class="hidden md:block absolute left-0 top-[-50%]" src="/icons/plant-shape-1.svg" alt="Plant icon."/>
+    <NuxtImg format="webp" class="hidden md:block absolute right-0 top-0" src="/icons/plant-shape-2.svg" alt="Plant icon."/>
     <div class="container-slim flex flex-wrap justify-center gap-4 cards pb-8">
       <HeroCard v-for="card in cards" :card="card" />
     </div>

@@ -35,7 +35,7 @@
       </div>
 
     </div>
-    <img class="w-full" src="/icons/footer-shape.svg" alt="">
+    <NuxtImg loading="lazy" width="1920" height="150" format="webp" class="w-full" src="/icons/footer-shape.svg" alt="Footer shape icons."/>
   </footer>
 </template>
 

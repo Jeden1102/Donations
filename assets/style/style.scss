@@ -1,6 +1,10 @@
 @use "./variables.scss" as *;
 @use "./mixin.scss" as *;
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: $font-primary;
 }
@@ -11,5 +15,5 @@
 
 .container-slim {
     max-width: 1200px;
-    margin:0 auto;
+    margin: 0 auto;
 }

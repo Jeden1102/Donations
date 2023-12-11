@@ -1,6 +1,6 @@
 <template>
     <div class="bg-secondary-3 text-white relative py-8" id="crafted-universe">
-        <img class="hidden md:block absolute left-0 bottom-0 h-52 lg:h-72 xl:h-96" src="/icons/workshop-grid.png" alt="Ilus image"  />
+        <NuxtImg loading="lazy" format="webp" class="hidden md:block absolute left-0 bottom-0 h-52 lg:h-72 xl:h-96" src="/icons/workshop-grid.png" alt="Ilus image"  />
         <div class="container-slim p-4 flex flex-col gap-8 md:flex-row z-10 relative md:p-8 lg:gap-20">
             <div class="flex flex-col gap-8 text-light lg:pb-20">
                 <p>
@@ -15,7 +15,7 @@
                 </p>
             </div>
             <div class="flex flex-col gap-3">
-                <img class="mx-auto md:ml-auto md:mr-4" src="/icons/ilus.svg" alt="Ilus image" width="122" height="122" />
+                <NuxtImg loading="lazy" format="webp" class="mx-auto md:ml-auto md:mr-4" src="/icons/ilus.svg" alt="Ilus image" width="122" height="122" />
                 <h2
                     class="text-3xl z-10 relative text-primary-3 font-secondary md:text-4xl lg:text-5xl xl:text-8xl container-slim text-center">
                     Crafted

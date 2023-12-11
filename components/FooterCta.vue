@@ -19,8 +19,8 @@
                 <Icon name="material-symbols:arrow-right-alt" />
             </button>
             <div class="absolute w-full justify-between hidden lg:flex">
-                <img width="250" height="250" src="/icons/plant-shape-3.svg" alt="Plant shape image.">
-                <img width="250" height="250" src="/icons/plant-shape-4.svg" alt="Plant shape image.">
+                <NuxtImg loading="lazy" format="webp" width="250" height="250" src="/icons/plant-shape-3.svg" alt="Plant shape image."/>
+                <NuxtImg loading="lazy" format="webp" width="250" height="250" src="/icons/plant-shape-4.svg" alt="Plant shape image."/>
             </div>
         </div>
     </div>

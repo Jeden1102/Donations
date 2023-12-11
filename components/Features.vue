@@ -2,9 +2,9 @@
     <div class="flex flex-col gap-4 bg-secondary-1 py-4" id="features">
         <div class="container-slim p-4 md:p-8 lg:py-16">
             <div class="flex flex-col items-center justify-center lg:flex-row">
-                <img width="300" height="300" src="/images/candle-1.png" alt="Candle image.">
-                <img width="300" class="scale-150 -translate-y-8" src="/icons/flowers.svg" alt="">
-                <img width="300" height="300" src="/images/candle-2.png" alt="Candle image.">
+                <NuxtImg loading="lazy" format="webp" width="300" height="300" src="/images/candle-1.png" alt="Candle image."/>
+                <NuxtImg loading="lazy" format="webp" width="300" height="200" class="scale-150 -translate-y-8" src="/icons/flowers.svg" alt="Flowers icon."/>
+                <NuxtImg loading="lazy" format="webp" width="300" height="300" src="/images/candle-2.png" alt="Candle image."/>
             </div>
             <div class="flex flex-col gap-4 md:flex-row mt-12 md:gap-8">
                 <div v-for="(feature, key) in features" class="flex flex-col gap-6 justify-center flex-1" :key="key">

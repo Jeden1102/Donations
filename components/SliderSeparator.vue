@@ -7,7 +7,7 @@
                         {{ item }}
                     </p>
                     <div v-if="key % 2 !== 0">
-                        <img src="/icons/star.svg" alt="Star icon" width="80" height="80">
+                        <NuxtImg loading="lazy" format="webp" src="/icons/star.svg" alt="Star icon" width="80" height="80"/>
                     </div>
                 </div>
             </slide>

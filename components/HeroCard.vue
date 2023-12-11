@@ -8,7 +8,7 @@
         {{ item }}
       </li>
     </ul>
-    <img src="/icons/hand.svg" alt="Hand icon" width="103" height="103">
+    <NuxtImg loading="lazy" format="webp" src="/icons/hand.svg" alt="Hand icon" width="103" height="103"/>
   </div>
 </template>
 <script setup>

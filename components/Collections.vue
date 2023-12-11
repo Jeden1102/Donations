@@ -10,7 +10,7 @@
                     to stylish home accents, our handcrafted pieces add character and charm to any space.</p>
             </div>
             <div class="bg-primary-4 p-4 w-full">
-                <img class="mx-auto w-full max-w-[400px]" src="/icons/art-icon.svg" alt="Art icon.">
+                <NuxtImg loading="lazy" width="400" height="450" format="webp" class="mx-auto w-full max-w-[400px]" src="/icons/art-icon.svg" alt="Art icon."/>
             </div>
         </div>
     </div>
