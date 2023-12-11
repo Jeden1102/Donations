@@ -16,8 +16,7 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Lato: true,
-      Ultra: true,
+      DmSans: true,
     },
   },
   components: [{ path: "~/global" }, "~/components"],
