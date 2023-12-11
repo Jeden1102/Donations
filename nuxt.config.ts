@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "@nuxtjs/tailwindcss",
     'vue3-carousel-nuxt',
-    "@nuxt/image"
+    "@nuxt/image",
+    '@nuxtjs/supabase'
   ],
   postcss: {
     plugins: {
@@ -20,4 +21,13 @@ export default defineNuxtConfig({
     },
   },
   components: [{ path: "~/global" }, "~/components"],
+  supabase: {
+    redirect: false
+  },
+  runtimeConfig: {
+    public: {
+      SUPABASE_URL: '',
+      SUPABASE_KEY: '',
+    }
+  }
 });
