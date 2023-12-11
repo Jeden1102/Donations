@@ -1,9 +1,9 @@
 <template>
     <NuxtLayout name="404">
         <Header />
-        <div class="min-h-[500px]">
+        <div class="min-h-[500px] mt-40">
             <h2
-                class="text-3xl mt-40 text-primary-4 font-secondary md:text-4xl lg:text-5xl xl:text-8xl container-slim text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.4)]">
+                class="text-3xl text-primary-4 font-secondary md:text-4xl lg:text-5xl xl:text-8xl container-slim text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.4)]">
                 Oh...It seems you are lost?
             </h2>
             <h3 class="text-2xl text-secondary-1 font-secondary md:text-3xl lg:text-4xl text-center my-4">
