@@ -28,6 +28,7 @@ export default defineNuxtConfig({
     public: {
       SUPABASE_URL: '',
       SUPABASE_KEY: '',
+      NUXT_STRIPE_SK: process.env.NUXT_STRIPE_SK,
     }
   }
 });
