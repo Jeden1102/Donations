@@ -1,8 +1,8 @@
 <template>
-  <div class="overflow-x-hidden">
+  <div class="overflow-x-hidden min-h-screen">
     <Header />
-
-    <Footer/>
+    <HeroDonation/>
+    <Footer />
   </div>
 </template>
 

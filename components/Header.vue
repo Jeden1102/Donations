@@ -1,24 +1,96 @@
 <template>
-  <header class="">
-    <h1 class="text-primary text-5xl">header</h1>
-    <a class="bg-primary text-lg rounded-md px-4 py-2 text-white shadow-sm" href="https://buy.stripe.com/test_dR6dSgfG443o7rq3cc?__prefilled_amount=2000">
-      Buy
-    </a>
+  <header class="container">
+    <div class="py-4 flex justify-between relative z-10">
+      <NuxtImg src="/icons/logo.svg" width="193" height="37" alt="Page logo" />
+      <button class="block toggle-menu md:hidden" :class="{ 'active': isMobileMenuVisible }"
+        @click="isMobileMenuVisible = !isMobileMenuVisible">
+        <span class="line"></span>
+      </button>
+      <div
+        class="bg-white absolute top-20 flex flex-col right-0 shadow-md p-4 gap-4 transition-all md:opacity-100 md:translate-y-0 md:static md:flex-row md:shadow-none md:items-center md:justify-between w-full"
+        :class="{ 'opacity-0 -translate-y-4 pointer-events-none': !isMobileMenuVisible }">
+        <nav class="flex flex-col gap-1 items-end md:flex-row md:gap-6">
+          <NuxtLink to="#">Home</NuxtLink>
+          <NuxtLink to="#">Services</NuxtLink>
+          <NuxtLink to="#">About</NuxtLink>
+          <NuxtLink to="#">Blog</NuxtLink>
+        </nav>
+        <div class="border-t border-gray-300 pt-6 flex gap-4 items-center md:border-0 md:pt-0">
+          <NuxtLink class="flex items-center gap-2" to="#">
+            <Icon name="material-symbols:lock-open-outline" />
+            <span>Login</span>
+          </NuxtLink>
+          <NuxtLink to="#" class="btn-primary">Donate now</NuxtLink>
+        </div>
+      </div>
+    </div>
   </header>
 </template>
 <script setup lang="ts">
-const runtimeConfig = useRuntimeConfig();
-
-import { createClient } from '@supabase/supabase-js'
-const supabase = createClient(runtimeConfig.public.supabase.url, runtimeConfig.public.supabase.key)
-// Create a function to handle inserts
-const handleInserts = (payload:any) => {
-  console.log('Change received!', payload)
-}
-
-// Listen to inserts
-supabase
-  .channel('donations')
-  .on('postgres_changes', { event: '*', schema: 'public', table: 'donations' }, handleInserts)
-  .subscribe()
+import { ref } from 'vue';
+const isMobileMenuVisible = ref(false);
 </script>
+<style lang="scss" scoped>
+.toggle-menu {
+  .line {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: black;
+    position: relative;
+
+    &::after,
+    &::before {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      background-color: black;
+      content: '';
+      transition: all .4s;
+
+    }
+
+    &::before {
+      width: 130%;
+      top: -7px;
+    }
+
+    &::after {
+      bottom: -7px;
+      width: 80%;
+    }
+  }
+
+  &.active {
+    .line {
+      transform: rotate(-45deg);
+
+      &::after {
+        transform: rotate(90deg) translateX(200%);
+        opacity: 0;
+      }
+
+      &::before {
+        transform: rotate(90deg) translateX(6px);
+        width: 100%;
+      }
+    }
+  }
+
+  &:not(.active) {
+
+    &:hover {
+      .line {
+        &::before {
+          width: 120%;
+        }
+
+        &::after {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+</style>

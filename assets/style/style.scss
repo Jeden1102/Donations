@@ -7,10 +7,20 @@ html {
 
 * {
     font-family: $font-primary;
+    color: #02073E;
 }
 
 
-.container-slim {
+.container {
     max-width: 1300px;
     margin: 0 auto;
+    padding: 0 10px;
+
+    @include breakpoint(medium) {
+        padding: 0 20px;
+    }
+
+    @include breakpoint(large) {
+        padding: 0 50px;
+    }
 }
