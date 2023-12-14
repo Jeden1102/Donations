@@ -4,6 +4,7 @@
     <HeroDonation/>
     <Services/>
     <Stats/>
+    <VideoSection/>
     <Footer />
   </div>
 </template>
