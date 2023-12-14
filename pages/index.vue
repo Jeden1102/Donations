@@ -2,6 +2,8 @@
   <div class="overflow-x-hidden min-h-screen">
     <Header />
     <HeroDonation/>
+    <Services/>
+    <Stats/>
     <Footer />
   </div>
 </template>
