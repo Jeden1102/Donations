@@ -1,10 +1,13 @@
 <template>
   <div class="overflow-x-hidden min-h-screen">
     <Header />
-    <HeroDonation/>
-    <Services/>
-    <Stats/>
-    <VideoSection/>
+    <HeroDonation />
+    <Services />
+    <Stats />
+    <VideoSection />
+    <Map />
+    <Milestones />
+    <BlogTeasers />
     <Footer />
   </div>
 </template>
