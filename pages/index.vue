@@ -11,7 +11,10 @@
 </template>
 
 <script setup lang="ts">
-
+const route = useRoute()
+if(route.query.code){
+  navigateTo('/mail-verified')
+}
 </script>
 
 <style  lang="scss">

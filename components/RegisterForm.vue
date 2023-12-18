@@ -53,8 +53,11 @@ const signIn = async () => {
     })
     if (error) {
         errorMessage.value = error.message;
+        return;
     }
-    console.log(data, error)
+    if (data) {
+        navigateTo(`/mail-confirmation?email=${formData.email}`)
+    }
 }
 
 watchEffect(() => {

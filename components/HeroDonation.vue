@@ -24,6 +24,15 @@
                         class="h-14 p-2 px-4 border mt-2 bg-gray-50 shadom-sm rounded-md w-full md:mt-4">
                     <span class="absolute top-6 right-4">$</span>
                 </div>
+                <div class="checkbox-wrapper my-2 flex items-center gap-2">
+                    <input v-model="nameVisible" id="c1" type="checkbox">
+                    <label for="c1">Public my name*</label>
+                </div>
+                <input v-if="nameVisible" type="text" placeholder="Johny"
+                    class="h-14 p-2 px-4 border mt-2 bg-gray-50 shadom-sm rounded-md w-full md:my-2">
+                <span class="text-gray-600 text-sm">
+                    *By checking this checkbox, your name will be public visible for visitors.
+                </span>
                 <button class="btn-primary w-full mt-4 py-4">
                     Donate now
                 </button>
@@ -34,6 +43,7 @@
 
 <script setup lang="ts">
 const donationValues = [5, 20, 50, 100];
+const nameVisible = ref(false);
 </script>
 
 <style lang="scss" scoped>

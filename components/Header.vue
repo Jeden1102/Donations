@@ -30,7 +30,7 @@
             <div
               class="absolute transition-all left-0 top-8 bg-white py-4 px-8 flex flex-col gap-4 rounded-md  shadow-md border "
               :class="{ 'opacity-0 -translate-y-4 pointer-events-none': !isUserMenuVisible }">
-              <NuxtLink to="user">
+              <NuxtLink to="user" @click="isUserMenuVisible = false">
                 <Icon name="streamline:blood-bag-donation" />
                 <span class="ml-2">Profile</span>
               </NuxtLink>
@@ -55,6 +55,7 @@ const user = useSupabaseUser()
 const logOut = async () => {
   auth.signOut()
   navigateTo('/')
+  isUserMenuVisible.value = false;
 }
 </script>
 <style lang="scss" scoped>
