@@ -1,6 +1,5 @@
 <template>
   <div class="overflow-x-hidden min-h-screen">
-    <Header />
     <HeroDonation />
     <Services />
     <Stats />
@@ -8,7 +7,6 @@
     <Map />
     <Milestones />
     <BlogTeasers />
-    <Footer />
   </div>
 </template>
 
