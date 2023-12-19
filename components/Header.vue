@@ -1,6 +1,6 @@
 <template>
   <header class="container mx-auto relative">
-    <div class="py-4 flex justify-between  z-10">
+    <div class="py-4 flex justify-between z-10">
       <NuxtLink class="flex  items-center" to="/">
         <NuxtImg src="/icons/logo.svg" width="193" height="37" alt="Page logo" />
       </NuxtLink>
@@ -9,7 +9,7 @@
         <span class="line"></span>
       </button>
       <div
-        class="bg-white absolute top-14 left-0 flex flex-col right-0 shadow-md p-4 gap-4 transition-all md:opacity-100 md:translate-y-0 md:static md:flex-row md:shadow-none md:items-center md:justify-between w-full md:pointer-events-auto"
+        class="absolute top-14 left-0 flex flex-col right-0 shadow-md p-4 gap-4 transition-all md:opacity-100 md:translate-y-0 md:static md:flex-row md:shadow-none md:items-center md:justify-between w-full md:pointer-events-auto"
         :class="{ 'opacity-0 -translate-y-4 pointer-events-none': !isMobileMenuVisible }">
         <nav class="flex flex-col gap-1 items-end md:flex-row md:gap-6">
           <NuxtLink to="/">Home</NuxtLink>
