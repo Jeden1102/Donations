@@ -1,6 +1,3 @@
-1. Donations testing user logged/anonymous.
-2. Show error message on donation summary page.
-3. User donations list.
 4. Milestones section with legit data.
 5. "Donate now" buttons actually should show modal with donation box.
 6. Dark mode.

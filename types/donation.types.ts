@@ -8,5 +8,6 @@ export interface Donation {
     amount_total: number;
     customer_details: {
         email: String;
-    }
+    },
+    status:string;
 }

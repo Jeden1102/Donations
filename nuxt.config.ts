@@ -8,8 +8,12 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     'vue3-carousel-nuxt',
     "@nuxt/image",
-    '@nuxtjs/supabase'
+    '@nuxtjs/supabase',
+    '@nuxtjs/color-mode',
   ],
+  colorMode: {
+    classSuffix: ''
+  },
   postcss: {
     plugins: {
       autoprefixer: {},

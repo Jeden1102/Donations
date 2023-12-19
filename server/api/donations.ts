@@ -4,6 +4,7 @@ import {  serverSupabaseClient } from '#supabase/server'
 
 export default defineEventHandler(async (event) => {
   const client = await serverSupabaseClient<Database>(event)
+
   let { data: donations, error } = await client
   .from('donations')
   .select('*')

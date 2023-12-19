@@ -2,7 +2,7 @@
     <div class="container">
         <div class="flex flex-col md:flex-row-reverse gap-4 justify-between mt-4 md:mt-8 lg:mt-20">
             <NuxtImg width="640" height="350" src="/icons/hero-image.svg" class="w-full max-w-[700px]" />
-            <div class="bg-gray-100 px-4 py-8 shadow-lg border  md:max-w-[426px] lg:px-10">
+            <div class="bg-gray-100 px-4 py-8 shadow-lg border  md:max-w-[426px] lg:px-10 dark:bg-gray-700">
                 <h1 class="text-2xl font-bold lg:text-3xl">Donate for the smile of orphans face</h1>
                 <div class="flex gap-2 flex-col pl-5 my-4 md:my-8 md:flex-row md:gap-8">
                     <input class="donation-type" type="radio" name="donation-type" id="one-time">

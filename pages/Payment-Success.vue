@@ -33,7 +33,6 @@ const route = useRoute()
 const session_id = route.query.id;
 
 const donationData = ref<Donation | null>(null);
-
 const validatePayment = async () => {
   try {
     const response = await axios.get(`/api/session?id=${session_id}`)
@@ -72,6 +71,7 @@ const insertDonationToDb = async () => {
     user_name: donationData.value.custom_fields?.[0].text.value ?? '',
     session_id: session_id,
     user_id: null as null | string,
+    status: donationData.value.status,
   }
   if (user) {
     insertObject.user_id = user.value?.id as string;
