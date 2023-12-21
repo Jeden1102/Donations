@@ -6,12 +6,12 @@ html {
 }
 
 body{
-  @apply bg-gradient-to-r from-gray-50 to-gray-100;
+  @apply bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-800;
 }
 
 * {
     font-family: $font-primary;
-    color: #02073E;
+    @apply text-[#02073E] dark:text-gray-200;
 }
 
 

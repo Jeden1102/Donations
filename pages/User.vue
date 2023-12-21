@@ -2,7 +2,8 @@
     <div class="container" v-if="user">
         <div class="my-4">
             <h1 class="text-2xl md:text-4xl">Hello, {{ user.user_metadata.name }}</h1>
-            <p class="my-2" v-if="donations">We'are happy you are with us. Here's the list of donation your provided for the children.</p>
+            <p class="my-2" v-if="donations">We'are happy you are with us. Here's the list of donation your provided for the
+                children.</p>
         </div>
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg" v-if="donations">
             <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -29,7 +30,9 @@
                             {{ donation.amount / 100 }}
                         </td>
                         <td class="px-6 py-4">
-                            <span class="block bg-green-200 w-fit py-1 px-2 rounded-md border border-green-500">{{ donation.status }}</span>
+                            <span
+                                class="block bg-green-200 w-fit py-1 px-2 rounded-md border border-green-500 dark:bg-gray-300 dark:text-gray-700 dark:border-0">{{
+                                    donation.status }}</span>
                         </td>
                     </tr>
                 </tbody>

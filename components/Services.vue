@@ -1,10 +1,10 @@
 <template>
     <section class="container">
-        <div class="my-8 md:my-20 bg-gray-100 pt-8 rounded-md shadow-lg">
-            <h2 class="text-center text-primary font-bold">Service we work for</h2>
-            <h3 class="text-center mt-4 mb-8 text-xl">What care we do for your family</h3>
+        <div class="my-8 md:my-20 bg-gray-100 pt-8 rounded-md shadow-lg dark:bg-gray-600">
+            <h2 class="text-center text-primary dark:text-gray-300 font-bold">Service we work for</h2>
+            <h3 class="text-center mt-4 mb-8 text-xl dark:text-gray-300">What care we do for your family</h3>
             <div class="p-4 rounded-md flex gap-4 flex-wrap md:p-8">
-                <div class="w-72 mx-auto flex flex-col justify-center items-center gap-3 px-3 py-4 rounded-md  transition-all cursor-pointer hover:bg-gray-50 group"
+                <div class="w-72 mx-auto flex flex-col justify-center items-center gap-3 px-3 py-4 rounded-md  transition-all cursor-pointer hover:bg-gray-50 group dark:hover:bg-gray-500"
                     v-for="(service, key) in services" :key="key">
                     <NuxtImg class="transition-all group-hover:-translate-y-1" :src="`/icons/${service.icon}`" />
                     <p class="font-bold">{{ service.title }}</p>

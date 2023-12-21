@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="flex my-8 gap-4 flex-col items-center bg-gray-100 p-8 rounded-md shadow-lg">
+        <div class="flex my-8 gap-4 flex-col items-center bg-gray-100 p-8 rounded-md shadow-lg dark:bg-gray-600">
             <h5 class="text-2xl md:text-3xl text-center">
                 Those states we provide donation
             </h5>
