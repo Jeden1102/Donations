@@ -1,4 +1,1 @@
-4. Milestones section with legit data.
-5. "Donate now" buttons actually should show modal with donation box.
-6. Dark mode - payment confirmation.
 7. Webcorevitals.

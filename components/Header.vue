@@ -41,7 +41,7 @@
               </button>
             </div>
           </div>
-          <NuxtLink to="#" class="btn-primary w-full text-center md:w-fit">Donate now</NuxtLink>
+          <NuxtLink to="https://buy.stripe.com/test_dR6dSgfG443o7rq3cc" class="btn-primary w-full text-center md:w-fit">Donate now</NuxtLink>
           <ModeSwitcher/>
         </div>
       </div>
