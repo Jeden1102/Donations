@@ -8,3 +8,9 @@
         @apply py-3 px-4 bg-primary text-white font-bold rounded-md shadow-md hover:-translate-y-[1px] transition-transform;
     }
 }
+
+@layer components {
+    .link-hover {
+        @apply relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
+    }
+}

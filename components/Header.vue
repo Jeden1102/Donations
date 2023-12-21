@@ -1,5 +1,5 @@
 <template>
-  <header class="container mx-auto fixed bg-gray-100 dark:bg-gray-800 z-50">
+  <header class="container mx-auto fixed md:static bg-gray-100 dark:bg-gray-800 z-50">
     <div class="py-4 flex justify-between z-10">
       <NuxtLink class="flex items-center" to="/">
         <span v-if="$colorMode.value == 'dark'">
@@ -16,10 +16,10 @@
         class="absolute bg-gray-100 md:bg-transparent top-14 left-0  flex flex-col right-0 shadow-md p-4 gap-4 transition-transform md:opacity-100 md:translate-y-0 md:static md:flex-row md:shadow-none md:items-center md:justify-between w-full md:pointer-events-auto dark:bg-gray-800"
         :class="{ 'opacity-0 -translate-y-4 pointer-events-none': !isMobileMenuVisible }">
         <nav class="flex flex-col gap-1 items-end md:flex-row md:gap-6 dark:text-gray-100">
-          <NuxtLink @click="hideMenus" to="/#home">Home</NuxtLink>
-          <NuxtLink @click="hideMenus" to="/#services">Services</NuxtLink>
-          <NuxtLink @click="hideMenus" to="/#about">About</NuxtLink>
-          <NuxtLink @click="hideMenus" to="/#blog">Blog</NuxtLink>
+          <NuxtLink class="link-hover" @click="hideMenus" to="/#home">Home</NuxtLink>
+          <NuxtLink class="link-hover" @click="hideMenus" to="/#services">Services</NuxtLink>
+          <NuxtLink class="link-hover" @click="hideMenus" to="/#about">About</NuxtLink>
+          <NuxtLink class="link-hover" @click="hideMenus" to="/#blog">Blog</NuxtLink>
         </nav>
         <div class="border-t border-gray-300 pt-6 flex gap-4 items-center md:border-0 md:pt-0">
           <NuxtLink v-if="!user" class="flex items-center gap-2" to="/login" @click="hideMenus">
