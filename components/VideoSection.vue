@@ -1,8 +1,8 @@
 <template>
-    <div class="container">
+    <div class="container" id="about">
         <div class="flex flex-col gap-6 md:flex-row md:items-center">
             <div>
-                <NuxtImg src="/images/children.png" />
+                <NuxtImg width="400" height="300" alt="Children image." format="webp" loading="lazy" src="/images/children.png" />
             </div>
             <div class="flex flex-col gap-4 md:w-1/2">
                 <p class="text-2xl md:text-3xl">We've funded <span class="text-decoration">$23,135</span> food projects for

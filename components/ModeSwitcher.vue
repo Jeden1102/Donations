@@ -1,5 +1,5 @@
 <template>
-      <button class="ml-5" @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')">
+      <button title="Theme switcher button" class="ml-5" @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')">
         <svg v-if="$colorMode.value == 'dark'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-50"
           viewBox="0 0 20 20" fill="white">
           <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
@@ -19,5 +19,3 @@ const setColorTheme = (newTheme: Theme) => {
     useColorMode().preference = newTheme
 }
 </script>
-
-<style lang="scss" scoped></style>

@@ -6,15 +6,10 @@
   </div>
 </template>
 <script setup lang="ts">
-type Theme = 'light' | 'dark';
-
-const setColorTheme = (newTheme: Theme) => {
-  useColorMode().preference = newTheme
-}
 useHead({
-  title: 'Candle shop',
+  title: 'Donations',
   meta: [
-    { name: 'description', content: 'Best candles shop in the area.' }
+    { name: 'description', content: 'Donations to help the community.' }
   ],
   htmlAttrs: {
     lang: 'en',

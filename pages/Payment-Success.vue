@@ -2,8 +2,8 @@
   <div>
     <div class="container" v-if="donationData">
       <div class="relative my-12 md:my-24">
-        <NuxtImg class="shadow-md rounded-md" src="/images/children-3.jpg" width="1300" height="550" alt="Childrens"
-          loading="lazy" />
+        <NuxtImg format="webp" loading="lazy" class="shadow-md rounded-md" src="/images/children-3.jpg" width="1300" height="550" alt="Childrens"
+          />
         <div
           class="bg-primary w-full flex flex-col justify-center gap-3  px-2  md:px-10  py-2 md:py-6 rounded-md shadow-md items-center text-white md:absolute md:gap-4  left-unset md:top-1/2 right-32 h-fit md:-translate-y-1/2  md:h-3/4 md:left-auto md:w-fit md:translate-x-0">
           <p class="text-white text-center tracking-widest text-xl md:text-2xl">THANK YOU,
@@ -80,7 +80,6 @@ const insertDonationToDb = async () => {
     .from('donations')
     .insert(insertObject)
 
-  console.log(error);
 }
 
 
@@ -90,6 +89,4 @@ onMounted(async () => {
   }
   await validatePayment();
 })
-
-
 </script>

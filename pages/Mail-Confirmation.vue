@@ -8,13 +8,13 @@
             <p>We're happy you're here. Let's get your email address verified</p>
             <p>Checkout your e-mail, and click the activation link to use our service to the fullest!</p>
             <div class="mt-4">
-                <button class="btn-primary">Go to Homepage</button>
+                <NuxtLink to="/" class="btn-primary">Go to Homepage</NuxtLink>
                 <p class="mt-4 text-sm">
                     If you'are having issues to find the message, make sure to check SPAM folder.
                 </p>
             </div>
             <p>Verification e-mail did't come?</p>
-            <button class="text-primary underline" @click="resend">Resend the code</button>
+            <button title="Resend the code button" class="text-primary underline" @click="resend">Resend the code</button>
         </div>
     </div>
 </template>

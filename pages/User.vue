@@ -43,7 +43,7 @@
         </div>
 
         <div v-else>
-            You have not placed any donations yet. Let's change in!
+            You have not placed any donations yet. Let's change it!
             <a href="https://buy.stripe.com/test_dR6dSgfG443o7rq3cc" class="btn-primary block mt-4 w-fit">Donate now</a>
         </div>
     </div>
@@ -82,5 +82,3 @@ onMounted(() => {
     getUserDonations()
 })
 </script>
-
-<style scoped></style>
