@@ -15,7 +15,7 @@
                         <input v-model="donationValue" @change="otherValue = ''" :value="value"
                             class="donation-value peer hidden" type="radio" name="donation-value" :id="`donation-${value}`">
                         <label
-                            class="dark:text-gray-700 donation-label w-20 h-14 cursor-pointer rounded-md border flex items-center justify-center bg-gray-50 dark:bg-gray-400 dark:border-gray-500 shadow-sm  peer-checked:bg-primary-light peer-checked:border-primary dark:peer-checked:bg-gray-600 dark:peer-checked:border-gray-700 dark:peer-checked:text-gray-200"
+                            class="dark:text-gray-700 donation-label w-20 h-14 cursor-pointer rounded-md border flex items-center justify-center bg-gray-50 dark:bg-gray-600 dark:border-gray-700 shadow-sm  peer-checked:bg-primary-light peer-checked:border-primary dark:peer-checked:bg-gray-400 dark:peer-checked:border-gray-500 dark:peer-checked:text-gray-200"
                             :for="`donation-${value}`">${{ value }}</label>
                     </div>
                 </div>
