@@ -27,7 +27,7 @@
             <span>Login</span>
           </NuxtLink>
           <div v-else class="relative w-full md:w-fit">
-            <button title="User toggle button" @click="isUserMenuVisible = false"
+            <button title="User toggle button" @click="isUserMenuVisible = !isUserMenuVisible"
               class="flex items-center gap-2">
               <Icon name="material-symbols:person-2-outline" />
               <span>User</span>
