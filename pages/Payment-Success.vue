@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="container" v-if="donationData">
+    <div class="container">
       <div class="relative my-12 md:my-24">
-        <NuxtImg format="webp" loading="lazy" class="shadow-md rounded-md" src="/images/children-3.jpg" width="1300" height="550" alt="Childrens"
-          />
-        <div
+        <NuxtImg format="webp" loading="lazy" class="shadow-md rounded-md" src="/images/children-3.jpg" width="1300"
+          height="550" alt="Childrens" />
+        <div v-if="donationData"
           class="bg-primary w-full flex flex-col justify-center gap-3  px-2  md:px-10  py-2 md:py-6 rounded-md shadow-md items-center text-white md:absolute md:gap-4  left-unset md:top-1/2 right-32 h-fit md:-translate-y-1/2  md:h-3/4 md:left-auto md:w-fit md:translate-x-0">
           <p class="text-white text-center tracking-widest text-xl md:text-2xl">THANK YOU,
             {{ donationData.custom_fields?.[0].text.value }}</p>
@@ -13,6 +13,19 @@
           </p>
           <p class=" text-center max-w-[300px] text-gray-200">It's thanks to people like You we can provide the help and
             spread love.</p>
+        </div>
+        <div v-else
+          class="bg-primary w-full flex flex-col justify-center gap-3  px-2  md:px-10  py-2 md:py-6 rounded-md shadow-md items-center text-white md:absolute md:gap-4  left-unset md:top-1/2 right-32 h-fit md:-translate-y-1/2  md:h-3/4 md:left-auto md:w-fit md:translate-x-0">
+          <p
+            class="text-white text-center tracking-widest text-xl md:text-2xl w-52 h-6 rounded-md animate-pulse bg-gray-200">
+          </p>
+          <p
+            class="text-white text-center max-w-[300px] text-lg md:text-xl w-52 h-20 rounded-md animate-pulse bg-gray-200">
+          </p>
+          <p
+            class="text-white text-center max-w-[300px] text-lg md:text-xl w-52 h-6 rounded-md animate-pulse bg-gray-200 mt-2">
+          </p>
+          <p class="text-center max-w-[300px] text-gray-200"></p>
         </div>
       </div>
     </div>

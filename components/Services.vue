@@ -6,7 +6,7 @@
             <div class="p-4 rounded-md flex gap-4 flex-wrap md:p-8">
                 <div class="w-72 mx-auto flex flex-col justify-center items-center gap-3 px-3 py-4 rounded-md  transition-all cursor-pointer hover:bg-gray-50 group dark:hover:bg-gray-500"
                     v-for="(service, key) in services" :key="key">
-                    <NuxtImg alt="Serivce icon." width="64" :height="service.iconHeight"  format="webp" loading="lazy"  class="transition-all group-hover:-translate-y-1" :src="`/icons/${service.icon}`" />
+                    <NuxtImg alt="Serivce icon." :height="service.iconHeight" :width="service.iconWidth ?? '64'"  format="webp" loading="lazy"  class="transition-all group-hover:-translate-y-1" :src="`/icons/${service.icon}`" />
                     <p class="font-bold">{{ service.title }}</p>
                     <p class="text-center">{{ service.description }}</p>
                     <NuxtLink class="text-secondary font-bold" to="#">Learn more</NuxtLink>
@@ -26,7 +26,8 @@ const services = [
     },
     {
         icon: 'baloon.svg',
-        iconHeight:'74',
+        iconHeight:'64',
+        iconWidth:'56',
         title: 'Pledge for cause',
         description: 'Get your info tests delivered at home collect a sample from the your task.',
     },
