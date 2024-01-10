@@ -1,12 +1,12 @@
 <template>
-    <div class="container" v-if="user">
+    <div class="container min-h-[400px]" v-if="user">
         <div class="my-4">
             <h1 class="text-2xl md:text-4xl">Hello, {{ user.user_metadata.name }}</h1>
             <p class="my-2" v-if="donations?.length > 0">We'are happy you are with us. Here's the list of donation your
                 provided for the
                 children.</p>
         </div>
-        <div v-if="donations">
+        <div v-if="donations && donations.length > 0">
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg" v-if="donations.length > 0">
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -41,7 +41,6 @@
                 </table>
             </div>
         </div>
-
         <div v-else>
             You have not placed any donations yet. Let's change it!
             <a href="https://buy.stripe.com/test_dR6dSgfG443o7rq3cc" class="btn-primary block mt-4 w-fit">Donate now</a>

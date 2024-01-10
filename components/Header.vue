@@ -1,5 +1,5 @@
 <template>
-  <header class="container mx-auto fixed md:static bg-gray-100 dark:bg-gray-800 z-50">
+  <header class="container mx-auto fixed md:static  dark:bg-gray-800 z-50">
     <div class="py-4 flex justify-between z-10">
       <NuxtLink class="flex items-center" to="/">
         <span v-if="$colorMode.value == 'dark'">

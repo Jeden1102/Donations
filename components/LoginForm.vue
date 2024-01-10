@@ -17,6 +17,7 @@
             </div>
             <button title="Sign in button" type="submit" class="btn-primary">Sign
                 in</button>
+            <button type="button" @click="fillData">Fill with test user data.</button>
             <span class="text-red-400">{{ errorMessage }}</span>
             <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                 Don’t have an account yet? <NuxtLink to="/register" class="text-primary underline">Sign up</NuxtLink>
@@ -29,17 +30,22 @@
 const user = useSupabaseUser()
 const { auth } = useSupabaseClient()
 
-const formData = {
+const formData = ref({
     email: '',
     password: '',
-}
+})
 
 const errorMessage = ref('')
 
+const fillData = () => {
+    formData.value.email = 'test@test.pl';
+    formData.value.password = 'test';
+}
+
 const logIn = async () => {
     const { data, error } = await auth.signInWithPassword({
-        email: formData.email,
-        password: formData.password,
+        email: formData.value.email,
+        password: formData.value.password,
     })
     if (error) {
         errorMessage.value = error.message;
