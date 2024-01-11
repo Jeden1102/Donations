@@ -72,4 +72,13 @@ yarn preview
 bun run preview
 ```
 
+## Deploy
+
+Deploy add:
+
+```bash
+# npm
+npm run start
+```
+
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
