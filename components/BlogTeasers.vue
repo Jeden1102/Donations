@@ -7,7 +7,7 @@
             </div>
             <div class="flex flex-col md:flex-row gap-4">
                 <div class="flex flex-col gap-2 flex-1" v-for="i in 3" :key="i">
-                    <NuxtImg format="webp" loading="lazy" class="rounded-md w-full h-52" :src="`/images/blog-${i}.png`" alt="Blog image" width="419" height="209" />
+                    <NuxtImg format="webp" loading="lazy" class="rounded-md w-full h-52 object-cover" :src="`/images/blog-${i}.png`" alt="Blog image" width="419" height="209" />
                     <p class="font-bold">How to work with prototype design with adobe xd featuring tools</p>
                     <p class="mt-2 opacity-75">The 2019 Innovation by Design Awards honor the designers and businesses
                         solving the problems of today
