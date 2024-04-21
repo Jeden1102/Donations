@@ -1,84 +1,37 @@
-# Nuxt 3 Minimal Starter
+# Donations
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Simple donations webpage.
 
-## Setup
+# Technologies used
 
-Make sure to install the dependencies:
+- Nuxt3
+- Taiwlind
+- Supabase
+- Typescript
+- Stripe
+- axios
 
-```bash
-# npm
-npm install
+## Installation
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+1. Build and run dev.
 
 ```bash
-# npm
+npm run install
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
-
-## Production
-
-Build the application for production:
+2. Copy env.example to .env and insert supabase connection and stripe configuration.
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+cp .env.example .env
 ```
 
-Locally preview production build:
 
-```bash
-# npm
-npm run preview
+## Live version
 
-# pnpm
-pnpm run preview
+See me live !
+https://donations-ashen.vercel.app/
 
-# yarn
-yarn preview
 
-# bun
-bun run preview
-```
 
-## Deploy
-
-Deploy add:
-
-```bash
-# npm
-npm run start
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
